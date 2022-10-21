@@ -1,8 +1,20 @@
 <?php
 
 $db = connectDatabase("localhost", "root", "", "villes_france");
-var_dump(selectAllDepartements($db));
+$departements = selectAllDepartements($db);
 
+foreach ($departements as $departement) {
+    var_dump($departement);
+}
+
+/**
+ * Connexion à la base de données
+ * @param string $host L'hôte du gestionnaire de la BDD
+ * @param string $user ID de l'utilisateur de la BDD
+ * @param string $password Password de l'utilisateur de la BDD
+ * @param string $dbname Nom de la BDD
+ * @return PDO|PDOException
+ */
 function connectDatabase (string $host, string $user, string $password, string $dbname) :PDO|PDOException
 {
     $path = "mysql:host=$host;dbname=$dbname;charset=utf8";
@@ -19,6 +31,11 @@ function connectDatabase (string $host, string $user, string $password, string $
     }
 }
 
+/**
+ * Renvoie tous les départements bruts dans un tableau
+ * @param PDO $databaseConnexion Connexion à la BDD
+ * @return array
+ */
 function selectAllDepartements (PDO $databaseConnexion) :array
 {
     $result = $databaseConnexion->query("SELECT * FROM departement");

@@ -17,8 +17,7 @@ catch (PDOException $e)
 {
     // On peut afficher un message d'erreur avec getMessage() mais il y a d'autres fonctionnalités
     // https://www.php.net/manual/fr/exception.getmessage.php
-    echo "Echec de la connexion ", $e->getMessage();
-    exit(); // On quitte le programme pour ne pas que le reste du script s'execute
+    throw new PDOException($e->getMessage() , (int)$e->getCode());
 }
 
 // Maintenant que notre connexion avec la BDD est faite on peut faire nos requêtes
