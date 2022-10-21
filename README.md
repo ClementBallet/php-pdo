@@ -1,6 +1,6 @@
 # PHP Data Objects (PDO)
 
-<blockquote>Exploration de PDO pour la connexion vers une base de données et récupérer les données voulues</blockquote>
+<blockquote style="background-color: darkslateblue"><br>Exploration de PDO pour la connexion vers une base de données et récupérer les données voulues<br></blockquote>
 
 Comment installer le projet : 
 1. Cloner le dépôt
