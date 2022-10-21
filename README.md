@@ -1,11 +1,5 @@
 # PHP Data Objects (PDO)
 
-<style>
-    blockquote { 
-        background-color: darkslateblue; 
-    }
-</style>
-
 <blockquote><br>Exploration de PDO pour la connexion vers une base de données et récupérer les données voulues<br><br></blockquote>
 
 Comment installer le projet : 
