@@ -14,6 +14,6 @@ Plusieurs façons de faire :
 - PDO basique
 - PDO avec gestion des erreurs dans un try...catch
 - PDO dans une fonction avec gestion des erreurs dans un try...catch 
-- PDO dans une classe (à venir)
+- PDO dans une classe
 
 Et aussi des exemples de `fetch()` et `fetchAll()`.
