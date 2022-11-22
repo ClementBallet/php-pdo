@@ -1,7 +1,7 @@
 <?php
 // Ne pas tenir compte du code en dessous
 ob_start();
-require_once "pdo-in-functions.php";
+require_once "../pdo-in-functions/index.php";
 ob_end_clean();
 echo "<h1>Commenter tous les autres fetch/fetchAll de la page et décommenter les 2 lignes du fetch/fetchAll que vous voulez essayer.</h1>";
 // Ne pas tenir compte du code en dessus
